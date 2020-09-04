@@ -4,16 +4,16 @@
     role="navigation"
     aria-label="main-navigation"
   >
-    <div class="container">
-      <div class="navbar-start">
+    <div class="container is-flex-touch">
+      <div class="navbar-start is-hidden-touch">
         <h5 class="navbar-item navbar__title">WISAM|HALAWI</h5>
       </div>
 
-      <!-- <div class="navbar-brand">
+      <div class="navbar-item navbar-start is-hidden-desktop">
         <WHLogo class="navbar__logo"></WHLogo>
-      </div> -->
+      </div>
 
-      <div class="navbar-end">
+      <div class="navbar-end is-flex-touch">
         <a class="navbar-item" href="https://github.com/nnomadic">
           <Github class="navbar__social"
         /></a>
@@ -26,13 +26,13 @@
 </template>
 
 <script>
-// import WHLogo from '@/assets/svg/logo.svg?inline'
+import WHLogo from '@/assets/svg/logo.svg?inline'
 import Github from '@/assets/svg/github.svg?inline'
 import Linkedin from '@/assets/svg/linkedin.svg?inline'
 
 export default {
   components: {
-    // WHLogo,
+    WHLogo,
     Github,
     Linkedin,
   },
@@ -42,12 +42,14 @@ export default {
 <style lang="scss">
 .navbar {
   background-color: transparent;
-  &-brand {
-    justify-content: center;
+
+  .container {
+    justify-content: space-around;
   }
+
   &__logo {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
   }
 
   &__social {

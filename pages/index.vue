@@ -1,24 +1,34 @@
 <template>
-  <div class="container">
-    <div>
-      <WHLogo class="logo" />
-      <h1 class="title">Come back soon.</h1>
+  <section class="section home">
+    <div class="container">
+      <div class="home__text-lockup is-flex">
+        <div>
+          <h1>Hey.</h1>
+        </div>
+        <div>
+          <h1>I'm</h1>
+          <h1>Wis</h1>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import WHLogo from '@/assets/svg/logo.svg?inline'
 export default {
-  components: {
-    WHLogo,
-  },
+  components: {},
 }
 </script>
 
 <style lang="scss" scoped>
-.logo {
-  width: 250px;
-  height: 250px;
+.home {
+  &__text-lockup {
+    margin: 0 auto;
+    min-height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+  }
 }
 </style>

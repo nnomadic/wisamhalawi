@@ -112,7 +112,13 @@ html {
 
 html,
 body {
-  background-color: $black;
+  // background-color: $black;
+  background: rgb(2, 11, 16);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 11, 16, 1) 0%,
+    rgba(1, 39, 48, 1) 97%
+  );
 }
 
 *,
@@ -129,12 +135,14 @@ h4,
 h5,
 p,
 a {
-  font-family: $roboto-slab;
+  // font-family: $roboto-slab;
+  font-family: $futura-book;
   color: $gray;
+  // color: $smooth-black2;
 }
 
 h1 {
   font-size: 6.25rem;
-  color: $electric;
+  // color: $dark-electric;
   letter-spacing: 1px;
 }

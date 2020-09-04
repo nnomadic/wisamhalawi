@@ -1,14 +1,8 @@
 <template>
-  <section class="section home">
-    <div class="container">
-      <div class="home__text-lockup is-flex">
-        <div>
-          <h1>Hey.</h1>
-        </div>
-        <div>
-          <h1>I'm</h1>
-          <h1>Wis</h1>
-        </div>
+  <section class="section home hero is-fullheight has-bg-img">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="">Hey, I'm Wis</h1>
       </div>
     </div>
   </section>
@@ -22,13 +16,10 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  &__text-lockup {
-    margin: 0 auto;
-    min-height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
-  }
+}
+
+.has-bg-img {
+  // background: url('~assets/images/hero.jpg') center center;
+  // background-size: cover;
 }
 </style>

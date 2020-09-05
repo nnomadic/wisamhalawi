@@ -51,13 +51,17 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    ['fullpage-nuxt', { animate: true }],
+  ],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
   styleResources: {
-    scss: ['~/assets/css/*.scss'],
+    scss: ['~/assets/css/vars/*.scss'],
   },
 }

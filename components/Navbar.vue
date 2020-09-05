@@ -1,12 +1,12 @@
 <template>
   <nav
-    class="navbar is-transparent is-fixed-top"
+    class="navbar is-fixed-top"
     role="navigation"
     aria-label="main-navigation"
   >
     <div class="container is-flex-touch">
       <div class="navbar-start is-hidden-touch">
-        <h5 class="navbar-item navbar__title">WISAM|HALAWI</h5>
+        <h5 class="navbar__title navbar-item">WISAM|HALAWI</h5>
       </div>
 
       <div class="navbar-item navbar-start is-hidden-desktop">
@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss">
 .navbar {
-  background-color: transparent;
+  background-color: transparent !important;
 
   .container {
     justify-content: space-around;
@@ -66,6 +66,10 @@ export default {
     letter-spacing: 1.1rem;
     user-select: none;
     -webkit-user-select: none;
+    color: $gray;
+  }
+
+  .navbar-item {
     color: $gray;
   }
 }

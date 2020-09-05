@@ -12,7 +12,7 @@
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .has-bg-img {
   // background: url('~assets/images/hero.jpg') center center;
   // background-size: cover;
@@ -45,6 +45,10 @@
     &-4 {
       @include fadein('8000ms');
     }
+  }
+
+  .icon-scroll {
+    @include fadein('11000ms');
   }
 }
 </style>

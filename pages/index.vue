@@ -5,7 +5,7 @@
         <HomepageHero></HomepageHero>
       </div>
       <div class="page-2 page">
-        <Titty></Titty>
+        <PortfolioHero></PortfolioHero>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@ export default {
       opts: {
         start: 0,
         dir: 'v',
-        duration: 500,
+        duration: 800,
         beforeChange(currentSlideEl, currenIndex, nextIndex) {},
         afterChange(currentSlideEl, currenIndex) {},
       },

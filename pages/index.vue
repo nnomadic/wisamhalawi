@@ -5,6 +5,7 @@
     <PortfolioHero></PortfolioHero>
     <hr />
     <ExperienceHero></ExperienceHero>
+    <Footer></Footer>
   </div>
 </template>
 

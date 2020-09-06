@@ -27,6 +27,13 @@ h1 {
   }
   // color: $dark-electric;
   letter-spacing: 1px;
+
+  a {
+    text-transform: none;
+    font-size: inherit;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
 }
 
 p,

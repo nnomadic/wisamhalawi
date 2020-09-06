@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+li {
   // font-family: $roboto-slab;
   font-family: $futura-book;
   color: $gray;
@@ -29,11 +30,23 @@ h1 {
 }
 
 p,
-a {
+a,
+li {
   font-size: 1rem;
 
   @include md {
     font-size: 1.5rem;
+  }
+}
+
+p {
+  &.subtitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.15rem;
   }
 }
 
@@ -68,4 +81,7 @@ a {
     width: 100%;
     left: 0;
   }
+}
+
+li {
 }

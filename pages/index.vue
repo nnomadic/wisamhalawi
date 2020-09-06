@@ -1,43 +1,35 @@
 <template>
-  <div class="fullpage-container">
-    <div ref="indexfs" v-fullpage="opts" class="fullpage-wp">
-      <div class="page-1 page">
-        <HomepageHero @next="moveNext()"></HomepageHero>
-      </div>
-      <div class="page-2 page">
-        <PortfolioHero></PortfolioHero>
-      </div>
-    </div>
+  <div class="index">
+    <HomepageHero></HomepageHero>
+    <hr />
+    <PortfolioHero></PortfolioHero>
+    <hr />
+    <ExperienceHero></ExperienceHero>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      opts: {
-        start: 0,
-        dir: 'v',
-        duration: 800,
-        beforeChange(currentSlideEl, currenIndex, nextIndex) {},
-        afterChange(currentSlideEl, currenIndex) {},
-      },
-    }
+    return {}
   },
-  methods: {
-    moveNext() {
-      this.$refs.indexfs.$fullpage.moveNext()
-    },
-  },
+  methods: {},
 }
 </script>
 
 <style lang="scss">
-.fullpage-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.index {
+  background: rgb(4, 31, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 31, 47, 1) 0%,
+    rgba(3, 65, 79, 1) 97%
+  );
+  animation: breathe 17s ease infinite;
+  background-size: 400% 400%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
 </style>

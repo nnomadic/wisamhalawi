@@ -9,7 +9,7 @@
       </div>
       <!-- <div class="icon-scroll"></div> -->
     </div>
-    <Chevron class="delay-fade" @next="next()"></Chevron>
+    <!-- <Chevron class="delay-fade" @next="next()"></Chevron> -->
   </section>
 </template>
 
@@ -27,14 +27,15 @@ export default {
 .has-bg-img {
   // background: url('~assets/images/hero.jpg') center center;
   // background-size: cover;
-  background: rgb(2, 11, 16);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 11, 16, 1) 0%,
-    rgba(1, 39, 48, 1) 97%
-  );
-  animation: breathe 17s ease infinite;
-  background-size: 400% 400%;
+  ////////
+  // background: rgb(2, 11, 16);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(2, 11, 16, 1) 0%,
+  //   rgba(1, 39, 48, 1) 97%
+  // );
+  // animation: breathe 17s ease infinite;
+  // background-size: 400% 400%;
 }
 
 .home {

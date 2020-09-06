@@ -119,8 +119,37 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  // background: rgb(4, 31, 47);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(4, 31, 47, 1) 0%,
+  //   rgba(3, 65, 79, 1) 97%
+  // );
+  // animation: breathe 17s ease infinite;
+  // background-size: 400% 400%;
+  // backface-visibility: hidden;
+  // transform-style: preserve-3d;
+  // -webkit-transform-style: preserve-3d;
+  // -webkit-backface-visibility: hidden;
+}
+
 svg path {
   transition: fill 0.5s ease;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  // background-image: linear-gradient(to right, $black, $dark-electric, $black);
+  background-image: linear-gradient(
+    90deg,
+    rgba(4, 31, 47, 1) 0%,
+    rgba(3, 65, 79, 1) 97%
+  );
+  width: 50%;
+  margin: 0 auto;
 }
 
 // .icon-scroll {

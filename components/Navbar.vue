@@ -56,7 +56,7 @@ export default {
     width: 50px;
     height: 50px;
     path {
-      fill: $dark-electric;
+      fill: $gray;
     }
   }
 
@@ -71,6 +71,12 @@ export default {
 
   .navbar-item {
     color: $gray;
+
+    &:focus-within,
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
   }
 }
 </style>

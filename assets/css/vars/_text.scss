@@ -1,0 +1,71 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  // font-family: $roboto-slab;
+  font-family: $futura-book;
+  color: $gray;
+  // color: $smooth-black2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  @include md {
+    font-size: 3rem;
+  }
+
+  @include lg {
+    font-size: 5rem;
+  }
+
+  @include xl {
+    font-size: 6.25rem;
+  }
+  // color: $dark-electric;
+  letter-spacing: 1px;
+}
+
+p,
+a {
+  font-size: 1rem;
+
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.15rem;
+
+  &:hover {
+    svg path {
+      fill: $dark-electric;
+    }
+  }
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $gray;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}

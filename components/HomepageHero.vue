@@ -6,11 +6,22 @@
         <h1 class="has-text-centered text-2">i'm Wis</h1>
         <h1 class="has-text-right text-3">a creative web dev</h1>
         <h1 class="has-text-right text-4">and front-end specialist</h1>
-        <div class="icon-scroll"></div>
       </div>
+      <!-- <div class="icon-scroll"></div> -->
     </div>
+    <Chevron class="delay-fade" @next="next()"></Chevron>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    next() {
+      this.$emit('next')
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .has-bg-img {
@@ -47,8 +58,8 @@
     }
   }
 
-  .icon-scroll {
-    @include fadein('11000ms');
+  .delay-fade {
+    @include fadein('10000ms');
   }
 }
 </style>

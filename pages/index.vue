@@ -1,8 +1,8 @@
 <template>
   <div class="fullpage-container">
-    <div ref="Home" v-fullpage="opts" class="fullpage-wp">
+    <div ref="indexfs" v-fullpage="opts" class="fullpage-wp">
       <div class="page-1 page">
-        <HomepageHero></HomepageHero>
+        <HomepageHero @next="moveNext()"></HomepageHero>
       </div>
       <div class="page-2 page">
         <PortfolioHero></PortfolioHero>
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     moveNext() {
-      this.$refs.example.$fullpage.moveNext()
+      this.$refs.indexfs.$fullpage.moveNext()
     },
   },
 }

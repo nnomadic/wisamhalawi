@@ -122,10 +122,7 @@ export default {
 
   &__work {
     align-self: flex-start;
-    margin-bottom: 1rem;
-    @include md {
-      margin-bottom: 3rem;
-    }
+    margin-bottom: 3rem;
 
     @include lg {
       margin: 7rem 10rem 5rem 0;

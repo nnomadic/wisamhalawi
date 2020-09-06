@@ -45,8 +45,9 @@ export default {
     }
     &-2 {
       @include fadein('4000ms');
+      margin: 2rem 0;
       @include md {
-        margin: 6.25rem 0;
+        margin: 4rem 0;
       }
     }
 

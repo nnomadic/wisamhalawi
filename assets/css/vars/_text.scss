@@ -57,11 +57,14 @@ a {
   position: relative;
   display: inline-block;
   letter-spacing: 0.15rem;
+  transition: 0.5s;
+  animation: colouring 3s infinite;
 
   &:hover {
     svg path {
       fill: $dark-electric;
     }
+    animation-play-state: paused;
   }
 
   &:after {

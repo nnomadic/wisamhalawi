@@ -60,4 +60,5 @@ export default {
   styleResources: {
     scss: ['~/assets/css/vars/*.scss'],
   },
+  loading: '~/components/Loading.vue',
 }

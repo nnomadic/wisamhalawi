@@ -19,12 +19,12 @@
       </div>
       <div class="portfolio-hero__made">
         <h1 class="mb-4">made by me</h1>
-        <a href="" class="portfolio-hero__link">
+        <nuxt-link to="/projects" class="portfolio-hero__link">
           <span class="is-block has-text-centered">
             <Tiles class="portfolio-hero__svg made"></Tiles>
           </span>
           <span> All projects </span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
     <!-- <Chevron @next="next()"></Chevron> -->

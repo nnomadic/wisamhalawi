@@ -36,10 +36,11 @@
               A chance appeared for me to learn new skills and expand what I've
               learnt from my internship in the form of a quarantine. Since then
               I've taken on multiple freelance projects (which you can read
-              about HERE). The back-end work on some of these projects were in
-              Laravel, and I've explored css frameworks such as Bulma, Tailwind
-              and Bootstrap. Every project has had ES6 Javascript involved,
-              alongside a choice of Vue or Nuxt.
+              about <nuxt-link to="/projects">here</nuxt-link>). The back-end
+              work on some of these projects were in Laravel, and I've explored
+              css frameworks such as Bulma, Tailwind and Bootstrap. Every
+              project has had ES6 Javascript involved, alongside a choice of Vue
+              or Nuxt.
             </p>
           </div>
         </div>

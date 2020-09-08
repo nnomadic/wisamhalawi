@@ -6,11 +6,15 @@
   >
     <div class="container is-flex-touch">
       <div class="navbar-start is-hidden-touch">
-        <h5 class="navbar__title navbar-item">WISAM|HALAWI</h5>
+        <nuxt-link to="/" class="navbar__nolink"
+          ><h5 class="navbar__title navbar-item">WISAM|HALAWI</h5></nuxt-link
+        >
       </div>
 
       <div class="navbar-item navbar-start is-hidden-desktop">
-        <WHLogo class="navbar__logo"></WHLogo>
+        <nuxt-link to="/" class="navbar__nolink"
+          ><WHLogo class="navbar__logo"></WHLogo
+        ></nuxt-link>
       </div>
 
       <div class="navbar-end is-flex-touch">
@@ -76,6 +80,22 @@ export default {
     &:hover,
     &:focus {
       background-color: transparent;
+    }
+  }
+
+  &__nolink {
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      h1 {
+        color: $dark-electric;
+      }
+
+      svg path {
+        fill: $dark-electric;
+      }
     }
   }
 }

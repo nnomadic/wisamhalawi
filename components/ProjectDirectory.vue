@@ -1,6 +1,6 @@
 <template>
   <section class="project-directory">
-    <div class="mt-6 mb-6">
+    <div class="">
       <div class="project-directory__projects">
         <nuxt-link to="/projects/expeditions" class="feature">
           <img
@@ -53,6 +53,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-color: $soft-black;
+  margin: 3rem 0 8rem;
+
+  @include lg {
+    margin: -2rem 0 8rem;
+  }
   &__projects {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -64,11 +70,12 @@
 
     @include md {
       grid-template-columns: repeat(2, 350px);
-      grid-template-rows: repeat(2, 200px);
+      grid-template-rows: repeat(3, 200px);
     }
     @include lg {
-      grid-template-columns: repeat(3, 450px);
-      grid-template-rows: repeat(2, 250px);
+      // grid-template-columns: repeat(3, 450px);
+      // grid-template-rows: repeat(2, 250px);
+      grid-gap: 5rem;
     }
 
     a {
@@ -85,6 +92,10 @@
         z-index: 2;
         img {
           filter: none;
+        }
+
+        h2 {
+          text-shadow: 2px 2px 4px $black;
         }
       }
     }
@@ -122,7 +133,7 @@
       grid-row-start: span 2;
 
       img {
-        height: 513px;
+        height: 529px;
       }
     }
   }

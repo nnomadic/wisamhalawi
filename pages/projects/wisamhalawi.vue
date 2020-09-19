@@ -28,7 +28,9 @@
               primarly to expand out of my comfort zone. This definitely
               benefited me though, as the site is blazingly fast, and perfectly
               SEO-optimized which addresses one of the main issues of shipping
-              with Vue.
+              with Vue. Alongside being a PWA enabled website, I aimed to get
+              the highest possible score across the board on Lighthouse through
+              best practices and optimization techniques.
             </p>
           </div>
           <div class="is-flex-desktop whsite__tech">

@@ -3,11 +3,14 @@
     <ProjectsHero
       :image-name="'ffe'"
       :hero-title="'fulfilment media'"
+      :image-alt="'Fulfilment Media Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
       <div>
         <div class="ffe__subtitles">
-          <a href="https://fulfilmentmedia.com/"
+          <a
+            href="https://fulfilmentmedia.com/"
+            aria-label="Link to fulfilmentmedia.com"
             >fulfilmentmedia.com (Coming Soon)</a
           >
           <p class="subtitle">|</p>
@@ -43,7 +46,11 @@
               </ul>
             </div>
             <div class="ffe__tech-back">
-              <nuxt-link to="/projects" class="ffe__link">
+              <nuxt-link
+                to="/projects"
+                class="ffe__link"
+                aria-label="Back to all projects"
+              >
                 <span class="is-block has-text-centered">
                   <Tiles class="ffe__svg made"></Tiles>
                 </span>

@@ -3,11 +3,14 @@
     <ProjectsHero
       :image-name="'expeditions'"
       :hero-title="'expeditions'"
+      :image-alt="'Expeditions Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
       <div>
         <div class="expeditions__subtitles">
-          <a href="https://expeditions.com/"
+          <a
+            href="https://expeditions.com/"
+            aria-label="Link to Expeditions.com"
             >expeditions.com (Changes Not live)</a
           >
           <p class="subtitle">|</p>
@@ -52,7 +55,11 @@
               </ul>
             </div>
             <div class="expeditions__tech-back">
-              <nuxt-link to="/projects" class="expeditions__link">
+              <nuxt-link
+                to="/projects"
+                class="expeditions__link"
+                aria-label="Back to all projects"
+              >
                 <span class="is-block has-text-centered">
                   <Tiles class="expeditions__svg made"></Tiles>
                 </span>

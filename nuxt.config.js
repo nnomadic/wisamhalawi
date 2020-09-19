@@ -1,3 +1,4 @@
+import shrinkRay from 'shrink-ray-current'
 export default {
   /*
    ** Nuxt rendering mode
@@ -61,4 +62,7 @@ export default {
     scss: ['~/assets/css/vars/*.scss'],
   },
   loading: { color: '#45A29E', height: '5px', throttle: 0 },
+  render: {
+    compressor: shrinkRay(),
+  },
 }

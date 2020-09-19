@@ -3,11 +3,14 @@
     <ProjectsHero
       :image-name="'saru'"
       :hero-title="'saru ju-jitsu'"
+      :image-alt="'Saru Ju Jitsu Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
       <div>
         <div class="saru__subtitles">
-          <a href="https://sarujujitsuacademy.co.uk/"
+          <a
+            href="https://sarujujitsuacademy.co.uk/"
+            aria-label="Link to sarujujitsuacademy.co.uk"
             >sarujujitsuacademy.co.uk</a
           >
           <p class="subtitle">|</p>
@@ -44,7 +47,11 @@
               </ul>
             </div>
             <div class="saru__tech-back">
-              <nuxt-link to="/projects" class="saru__link">
+              <nuxt-link
+                to="/projects"
+                class="saru__link"
+                aria-label="Back to all projects"
+              >
                 <span class="is-block has-text-centered">
                   <Tiles class="saru__svg made"></Tiles>
                 </span>

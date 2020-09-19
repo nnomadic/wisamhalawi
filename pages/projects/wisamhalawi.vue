@@ -3,11 +3,14 @@
     <ProjectsHero
       :image-name="'whsite'"
       :hero-title="'this site'"
+      :image-alt="'Portfolio Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
       <div>
         <div class="whsite__subtitles">
-          <a href="https://wisamhalawi.com/">wisamhalawi.com</a>
+          <a href="https://wisamhalawi.com/" aria-label="Link to homepage"
+            >wisamhalawi.com</a
+          >
           <p class="subtitle">|</p>
           <p class="subtitle">Front End Developer</p>
           <p class="subtitle">|</p>
@@ -40,7 +43,11 @@
               </ul>
             </div>
             <div class="whsite__tech-back">
-              <nuxt-link to="/projects" class="whsite__link">
+              <nuxt-link
+                to="/projects"
+                class="whsite__link"
+                aria-label="Back to all projects"
+              >
                 <span class="is-block has-text-centered">
                   <Tiles class="whsite__svg made"></Tiles>
                 </span>

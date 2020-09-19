@@ -3,11 +3,14 @@
     <ProjectsHero
       :image-name="'books'"
       :hero-title="'degree and achievements'"
+      :image-alt="'Books Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
       <div>
         <div class="degree__subtitles">
-          <a href="https://swansea.ac.uk/">swansea.ac.uk</a>
+          <a href="https://swansea.ac.uk/" aria-label="Link to swansea.ac.uk"
+            >swansea.ac.uk</a
+          >
           <p class="subtitle">|</p>
           <p class="subtitle">Computer Science BSc.</p>
           <p class="subtitle">|</p>
@@ -49,7 +52,11 @@
               </ul>
             </div>
             <div class="degree__tech-back">
-              <nuxt-link to="/projects" class="degree__link">
+              <nuxt-link
+                to="/projects"
+                class="degree__link"
+                aria-label="Back to all projects"
+              >
                 <span class="is-block has-text-centered">
                   <Tiles class="degree__svg made"></Tiles>
                 </span>

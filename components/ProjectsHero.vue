@@ -21,6 +21,10 @@ export default {
       type: String,
       default: 'code',
     },
+    imageAlt: {
+      type: String,
+      default: 'Code Hero Image',
+    },
     heroTitle: {
       type: String,
       default: 'my work',

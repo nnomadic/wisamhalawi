@@ -2,51 +2,67 @@
   <section class="section project-directory">
     <div class="">
       <div class="project-directory__projects">
-        <nuxt-link to="/projects/expeditions" class="feature">
+        <nuxt-link
+          to="/projects/expeditions"
+          class="feature"
+          aria-label="Expeditions Project Page"
+        >
           <div class="project-directory__projects-item">
             <img
               src="@/assets/images/expeditions.jpg"
-              alt=""
+              alt="Expeditions Hike Image"
               class="project-directory__image"
             />
             <h2 class="project-directory__image-text">Expeditions</h2>
           </div>
         </nuxt-link>
-        <nuxt-link to="/projects/fulfilment">
+        <nuxt-link
+          to="/projects/fulfilment"
+          aria-label="Fulfilment Media Project Page"
+        >
           <div class="project-directory__projects-item">
             <img
               src="@/assets/images/ffe.jpg"
-              alt=""
+              alt="Fulfilment Film Camera"
               class="project-directory__image"
             />
             <h2 class="project-directory__image-text">FulFilmEnt Media</h2>
           </div>
         </nuxt-link>
-        <nuxt-link to="/projects/sarujujitsu">
+        <nuxt-link
+          to="/projects/sarujujitsu"
+          aria-label="Saru Ju-Jitsu Project Page"
+        >
           <div class="project-directory__projects-item">
             <img
               src="@/assets/images/saru.jpg"
-              alt=""
+              alt="Saru Ju-Jitsu MMA"
               class="project-directory__image"
             />
             <h2 class="project-directory__image-text">Saru Ju-Jitsu</h2>
           </div>
         </nuxt-link>
-        <nuxt-link to="/projects/wisamhalawi">
+        <nuxt-link
+          to="/projects/wisamhalawi"
+          aria-label="WisamHalawi Project Page"
+        >
           <div class="project-directory__projects-item">
             <img
               src="@/assets/images/whsite.jpg"
-              alt=""
+              alt="WisamHalawi Keyboard"
               class="project-directory__image"
             />
             <h2 class="project-directory__image-text">wisamhalawi</h2>
           </div>
         </nuxt-link>
-        <nuxt-link to="/projects/degreeachievements">
+        <nuxt-link
+          to="/projects/degreeachievements"
+          aria-label="Degree and Achievements Project Page"
+        >
           <div class="project-directory__projects-item">
             <img
               src="@/assets/images/books.jpg"
-              alt=""
+              alt="Degree and achievements books"
               class="project-directory__image"
             />
             <h2 class="project-directory__image-text">Degree & Achievements</h2>

@@ -38,7 +38,6 @@ export default {
   .hero-body {
     background-attachment: fixed;
     background-position: top center;
-    background-repeat: no-repeat;
     background-size: 100% auto;
   }
 }

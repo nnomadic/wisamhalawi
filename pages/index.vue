@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="homepage">
     <HomepageHero></HomepageHero>
     <hr />
     <PortfolioHero></PortfolioHero>
@@ -8,16 +8,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  // asyncData() {
-  //   return new Promise((resolve) => {})
-  // },
-}
-</script>
-
 <style lang="scss">
-.index {
+.homepage {
   background: rgb(4, 31, 47);
   background: linear-gradient(
     90deg,

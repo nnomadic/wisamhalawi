@@ -27,16 +27,21 @@
         class="portfolio-hero__made"
       >
         <h1 class="mb-4">made by me</h1>
-        <nuxt-link
-          :to="{ path: 'projects' }"
-          class="portfolio-hero__link"
-          aria-label="Projects"
-        >
-          <span class="is-block has-text-centered">
-            <Tiles class="portfolio-hero__svg made" alt="Projects Link"></Tiles>
-          </span>
-          <span alt="Link to All projects"> All projects </span>
-        </nuxt-link>
+        <div>
+          <nuxt-link
+            :to="{ path: 'projects' }"
+            class="portfolio-hero__link"
+            aria-label="Projects"
+          >
+            <span class="is-block has-text-centered">
+              <Tiles
+                class="portfolio-hero__svg made"
+                alt="Projects Link"
+              ></Tiles>
+            </span>
+            <span alt="Link to All projects"> All projects </span>
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </section>

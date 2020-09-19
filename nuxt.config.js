@@ -71,8 +71,7 @@ export default {
   styleResources: {
     scss: ['~/assets/css/vars/*.scss'],
   },
-  // loading: { color: '#45A29E', height: '5px', throttle: 50 },
-  loading: '~/components/loading.vue',
+  loading: { color: '#45A29E', height: '5px', throttle: 50 },
   render: {
     compressor: shrinkRay(),
   },

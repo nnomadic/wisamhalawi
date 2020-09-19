@@ -5,17 +5,18 @@
     aria-label="main-navigation"
   >
     <div class="container is-flex-touch">
-      <div class="navbar-start is-hidden-touch">
+      <div class="navbar-item navbar-start">
         <nuxt-link to="/" class="navbar__nolink"
-          ><h5 class="navbar__title navbar-item">WISAM|HALAWI</h5></nuxt-link
-        >
+          ><h5 class="navbar__title is-hidden-touch">WISAM|HALAWI</h5>
+          <WHLogo class="navbar__logo is-hidden-desktop"></WHLogo>
+        </nuxt-link>
       </div>
 
-      <div class="navbar-item navbar-start is-hidden-desktop">
+      <!-- <div class="navbar-item navbar-start is-hidden-desktop">
         <nuxt-link to="/" class="navbar__nolink"
           ><WHLogo class="navbar__logo"></WHLogo
         ></nuxt-link>
-      </div>
+      </div> -->
 
       <div class="navbar-end is-flex-touch">
         <a class="navbar-item" href="https://github.com/nnomadic">
@@ -52,13 +53,22 @@ export default {
   }
 
   &__logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    @include lg {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__social {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+
+    @include lg {
+      width: 50px;
+      height: 50px;
+    }
     path {
       fill: $gray;
     }
@@ -71,6 +81,7 @@ export default {
     user-select: none;
     -webkit-user-select: none;
     color: $gray;
+    animation: colouring 15s infinite;
   }
 
   .navbar-item {

@@ -92,6 +92,10 @@ export default {
 }
 
 .portfolio-hero {
+  background-image: url('~assets/svg/squiggle.svg');
+  background-size: 350% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
   &__svg {
     width: 35px;
     height: 35px;

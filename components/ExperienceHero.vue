@@ -1,5 +1,5 @@
 <template>
-  <section class="section hero experience-hero is-fullheight">
+  <section class="section hero experience-hero">
     <div class="container">
       <h1 class="mb-6">professional experience</h1>
       <div class="is-flex-desktop mb-5">

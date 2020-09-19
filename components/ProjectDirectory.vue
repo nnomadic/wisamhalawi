@@ -9,7 +9,14 @@
         >
           <div class="project-directory__projects-item">
             <img
-              :data-src="require('~/assets/images/expeditions.jpg')"
+              data-sizes="auto"
+              :data-src="require('~/assets/images/expeditionsMOBILE.jpg')"
+              :data-srcset="
+                (require('~/assets/images/expeditionsMOBILE.jpg') +
+                  ' ' +
+                  '300w',
+                require('~/assets/images/expeditions.jpg') + ' ' + '900w')
+              "
               alt="Expeditions Hike Image"
               class="project-directory__image lazyload"
             />
@@ -22,7 +29,12 @@
         >
           <div class="project-directory__projects-item">
             <img
-              :data-src="require('~/assets/images/ffe.jpg')"
+              data-sizes="auto"
+              :data-src="require('~/assets/images/ffeMOBILE.jpg')"
+              :data-srcset="
+                (require('~/assets/images/ffeMOBILE.jpg') + ' ' + '300w',
+                require('~/assets/images/ffe.jpg') + ' ' + '900w')
+              "
               alt="Fulfilment Film Camera"
               class="project-directory__image lazyload"
             />
@@ -35,7 +47,12 @@
         >
           <div class="project-directory__projects-item">
             <img
-              :data-src="require('~/assets/images/saru.jpg')"
+              data-sizes="auto"
+              :data-src="require('~/assets/images/saruMOBILE.jpg')"
+              :data-srcset="
+                (require('~/assets/images/saruMOBILE.jpg') + ' ' + '300w',
+                require('~/assets/images/saru.jpg') + ' ' + '900w')
+              "
               alt="Saru Ju-Jitsu MMA"
               class="project-directory__image lazyload"
             />
@@ -48,7 +65,12 @@
         >
           <div class="project-directory__projects-item">
             <img
-              :data-src="require('~/assets/images/whsite.jpg')"
+              data-sizes="auto"
+              :data-src="require('~/assets/images/whsiteMOBILE.jpg')"
+              :data-srcset="
+                (require('~/assets/images/whsiteMOBILE.jpg') + ' ' + '300w',
+                require('~/assets/images/whsite.jpg') + ' ' + '900w')
+              "
               alt="WisamHalawi Keyboard"
               class="project-directory__image lazyload"
             />
@@ -61,7 +83,12 @@
         >
           <div class="project-directory__projects-item">
             <img
-              :data-src="require('~/assets/images/books.jpg')"
+              data-sizes="auto"
+              :data-src="require('~/assets/images/booksMOBILE.jpg')"
+              :data-srcset="
+                (require('~/assets/images/booksMOBILE.jpg') + ' ' + '300w',
+                require('~/assets/images/books.jpg') + ' ' + '900w')
+              "
               alt="Degree and achievements books"
               class="project-directory__image lazyload"
             />
@@ -131,7 +158,10 @@
       border: 1.5px solid $gray;
       overflow: hidden;
       border-radius: 5px;
-      animation: borderBreathe 2s ease infinite;
+
+      @include lg {
+        animation: borderBreathe 2s ease infinite;
+      }
     }
   }
   &__image {

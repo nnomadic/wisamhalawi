@@ -63,6 +63,7 @@ p {
     position: relative;
     display: inline-block;
     letter-spacing: 0.15rem;
+    color: $gray;
   }
 
   a {
@@ -116,4 +117,5 @@ a {
 }
 
 li {
+  list-style-type: circle;
 }

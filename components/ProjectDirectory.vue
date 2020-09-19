@@ -16,23 +16,23 @@
             alt=""
             class="project-directory__image"
           />
-          <h2 class="project-directory__image-text">Ful-Film-Ent Media</h2>
+          <h2 class="project-directory__image-text">FulFilmEnt Media</h2>
         </nuxt-link>
         <nuxt-link to="/projects/sarujujitsu">
           <img
-            src="@/assets/images/saru.png"
+            src="@/assets/images/saru.jpg"
             alt=""
             class="project-directory__image"
           />
-          <h2 class="project-directory__image-text">Saru-Ju-Jitsu</h2>
+          <h2 class="project-directory__image-text">Saru Ju-Jitsu</h2>
         </nuxt-link>
         <nuxt-link to="/projects/wisamhalawi">
           <img
-            src="@/assets/images/whsite.png"
+            src="@/assets/images/whsite.jpg"
             alt=""
             class="project-directory__image"
           />
-          <h2 class="project-directory__image-text">This Site</h2>
+          <h2 class="project-directory__image-text">wisamhalawi</h2>
         </nuxt-link>
         <nuxt-link to="/projects/degreeachievements">
           <img
@@ -54,11 +54,11 @@
   align-items: center;
   justify-content: center;
   // background-color: $soft-black;
-  margin: 3rem 0 8rem;
+  // margin: 3rem 0 8rem;
 
-  @include lg {
-    margin: -2rem 0 8rem;
-  }
+  // @include lg {
+  //   margin: -2rem 0 8rem;
+  // }
   &__projects {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -68,6 +68,8 @@
     // justify-items: center;
     // align-items: center;
 
+    margin: 3rem 0 8rem;
+
     @include md {
       grid-template-columns: repeat(2, 350px);
       grid-template-rows: repeat(3, 200px);
@@ -76,6 +78,7 @@
       // grid-template-columns: repeat(3, 450px);
       // grid-template-rows: repeat(2, 250px);
       grid-gap: 5rem;
+      margin: -2rem 0 8rem;
     }
 
     a {

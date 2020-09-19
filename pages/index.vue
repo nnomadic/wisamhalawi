@@ -17,7 +17,10 @@
     rgba(3, 65, 79, 1) 97%
   );
 
-  animation: breathe 17s ease infinite;
   background-size: 400% 400%;
+
+  @include lg {
+    animation: breathe 17s ease infinite;
+  }
 }
 </style>

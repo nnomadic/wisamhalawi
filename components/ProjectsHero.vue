@@ -4,7 +4,7 @@
       class="hero-body"
       :style="{
         backgroundImage:
-          'url(' + require('@/assets/images/' + imageName + '.jpg') + ')',
+          'url(' + require('@/assets/images/' + imageName + '.webp') + ')',
       }"
     >
       <div class="container">

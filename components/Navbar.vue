@@ -6,24 +6,29 @@
   >
     <div class="container is-flex-touch">
       <div class="navbar-item navbar-start">
-        <nuxt-link to="/" class="navbar__nolink"
+        <nuxt-link to="/" class="navbar__nolink" name="Home" aria-label="Home"
           ><h5 class="navbar__title is-hidden-touch">WISAM|HALAWI</h5>
-          <WHLogo class="navbar__logo is-hidden-desktop"></WHLogo>
+          <WHLogo
+            class="navbar__logo is-hidden-desktop"
+            alt="Home Link"
+          ></WHLogo>
         </nuxt-link>
       </div>
-
-      <!-- <div class="navbar-item navbar-start is-hidden-desktop">
-        <nuxt-link to="/" class="navbar__nolink"
-          ><WHLogo class="navbar__logo"></WHLogo
-        ></nuxt-link>
-      </div> -->
-
       <div class="navbar-end is-flex-touch">
-        <a class="navbar-item" href="https://github.com/nnomadic">
-          <Github class="navbar__social"
+        <a
+          class="navbar-item"
+          href="https://github.com/nnomadic"
+          name="GitHub"
+          aria-label="Github"
+        >
+          <Github class="navbar__social" alt="Github Link"
         /></a>
-        <a class="navbar-item" href="https://www.linkedin.com/in/wisam-halawi/"
-          ><Linkedin class="navbar__social"
+        <a
+          class="navbar-item"
+          href="https://www.linkedin.com/in/wisam-halawi/"
+          name="LinkedIn"
+          aria-label="LinkedIn"
+          ><Linkedin class="navbar__social" alt="LinkedIn Link"
         /></a>
       </div>
     </div>

@@ -1,7 +1,11 @@
 <template>
   <section class="section hero portfolio-hero is-fullheight bg-img">
     <div class="hero-body container">
-      <div class="portfolio-hero__work">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2500"
+        class="portfolio-hero__work"
+      >
         <h1 class="mb-4 has-text-centered">what i work with</h1>
         <div class="columns is-multiline is-mobile is-3">
           <div
@@ -17,17 +21,24 @@
           some of my professional comforts
         </p>
       </div>
-      <div class="portfolio-hero__made">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2500"
+        class="portfolio-hero__made"
+      >
         <h1 class="mb-4">made by me</h1>
-        <nuxt-link to="/projects" class="portfolio-hero__link">
+        <nuxt-link
+          to="/projects"
+          class="portfolio-hero__link"
+          aria-label="Projects"
+        >
           <span class="is-block has-text-centered">
-            <Tiles class="portfolio-hero__svg made"></Tiles>
+            <Tiles class="portfolio-hero__svg made" alt="Projects Link"></Tiles>
           </span>
-          <span> All projects </span>
+          <span alt="Link to All projects"> All projects </span>
         </nuxt-link>
       </div>
     </div>
-    <!-- <Chevron @next="next()"></Chevron> -->
   </section>
 </template>
 
@@ -80,17 +91,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bg-img {
-  // background: rgb(4, 31, 47);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(4, 31, 47, 1) 0%,
-  //   rgba(3, 65, 79, 1) 97%
-  // );
-  // animation: breathe 17s ease infinite;
-  // background-size: 400% 400%;
-}
-
 .portfolio-hero {
   background-image: url('~assets/svg/squiggle.svg');
   background-size: 350% 100%;
@@ -138,14 +138,6 @@ export default {
     display: flex;
     flex-flow: column;
     text-align: center;
-
-    h1 {
-      // width: 110%;
-    }
-
-    @include lg {
-      // margin-bottom: 7rem;
-    }
   }
 
   &__link {

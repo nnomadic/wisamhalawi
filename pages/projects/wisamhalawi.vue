@@ -66,10 +66,6 @@ export default {
 
 <style lang="scss">
 .whsite {
-  .projects-hero .hero-body {
-    // background-position: bottom center !important;
-  }
-
   &__subtitles {
     margin-bottom: 3rem;
 

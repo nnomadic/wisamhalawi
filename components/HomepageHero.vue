@@ -7,37 +7,11 @@
         <h1 class="has-text-right text-3">a creative web dev</h1>
         <h1 class="has-text-right text-4">and front-end specialist</h1>
       </div>
-      <!-- <div class="icon-scroll"></div> -->
     </div>
-    <!-- <Chevron class="delay-fade" @next="next()"></Chevron> -->
   </section>
 </template>
 
-<script>
-export default {
-  methods: {
-    next() {
-      this.$emit('next')
-    },
-  },
-}
-</script>
-
 <style lang="scss" scoped>
-.has-bg-img {
-  // background: url('~assets/images/hero.jpg') center center;
-  // background-size: cover;
-  ////////
-  // background: rgb(2, 11, 16);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(2, 11, 16, 1) 0%,
-  //   rgba(1, 39, 48, 1) 97%
-  // );
-  // animation: breathe 17s ease infinite;
-  // background-size: 400% 400%;
-}
-
 .home {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23041f2f' fill-opacity='0.23'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   animation: flowDown 35s infinite;

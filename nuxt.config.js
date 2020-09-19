@@ -34,7 +34,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [{ src: '@/plugins/aos', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -60,5 +60,5 @@ export default {
   styleResources: {
     scss: ['~/assets/css/vars/*.scss'],
   },
-  loading: '~/components/Loading.vue',
+  loading: { color: '#45A29E', height: '5px', throttle: 0 },
 }

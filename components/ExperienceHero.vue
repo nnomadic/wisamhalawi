@@ -1,11 +1,22 @@
 <template>
   <section class="section hero experience-hero">
     <div class="container">
-      <h1 class="mb-6">professional experience</h1>
+      <h1 data-aos="fade-up" data-aos-duration="2500" class="mb-6">
+        professional experience
+      </h1>
       <div class="is-flex-desktop mb-5">
-        <div class="experience-hero__mof">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2500"
+          class="experience-hero__mof"
+        >
           <div>
-            <a href="https://matterofform.com/">Matter of Form</a>
+            <a
+              href="https://matterofform.com/"
+              aria-label="Link to Matter of Form"
+              alt="Link to Matter of Form"
+              >Matter of Form</a
+            >
             <p class="subtitle">|</p>
             <p class="subtitle">Web Developer Intern</p>
             <p class="subtitle">|</p>
@@ -23,7 +34,11 @@
             </p>
           </div>
         </div>
-        <div class="experience-hero__fl">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2500"
+          class="experience-hero__fl"
+        >
           <div>
             <p class="subtitle">Freelance</p>
             <p class="subtitle">|</p>
@@ -36,11 +51,16 @@
               A chance appeared for me to learn new skills and expand what I've
               learnt from my internship in the form of a quarantine. Since then
               I've taken on multiple freelance projects (which you can read
-              about <nuxt-link to="/projects">here</nuxt-link>). The back-end
-              work on some of these projects were in Laravel, and I've explored
-              css frameworks such as Bulma, Tailwind and Bootstrap. Every
-              project has had ES6 Javascript involved, alongside a choice of Vue
-              or Nuxt.
+              about
+              <nuxt-link
+                to="/projects"
+                aria-label="Link to all projects"
+                alt="Link to all projects"
+                >here to view all projects</nuxt-link
+              >). The back-end work on some of these projects were in Laravel,
+              and I've explored css frameworks such as Bulma, Tailwind and
+              Bootstrap. Every project has had ES6 Javascript involved,
+              alongside a choice of Vue or Nuxt.
             </p>
           </div>
         </div>
@@ -56,15 +76,6 @@
   }
   &__description {
     margin-top: 1rem;
-    @include lg {
-      // width: 50%;
-    }
-
-    &-fl {
-      @include lg {
-        // margin-left: 2rem;
-      }
-    }
   }
 
   &__mof {

@@ -69,8 +69,6 @@ export default {
 <style lang="scss">
 .ffe {
   .projects-hero .hero-body {
-    // background-position: bottom center !important;
-
     h1 {
       text-shadow: 2px 2px 4px $black;
     }

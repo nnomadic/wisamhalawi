@@ -1,24 +1,23 @@
 <template>
-  <div class="container">
-    <div>
-      <WHLogo class="logo" />
-      <h1 class="title">Come back soon.</h1>
-    </div>
+  <div class="homepage">
+    <HomepageHero></HomepageHero>
+    <hr />
+    <PortfolioHero></PortfolioHero>
+    <hr />
+    <ExperienceHero></ExperienceHero>
   </div>
 </template>
 
-<script>
-import WHLogo from '@/assets/svg/logo.svg?inline'
-export default {
-  components: {
-    WHLogo,
-  },
-}
-</script>
+<style lang="scss">
+.homepage {
+  background: rgb(4, 31, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 31, 47, 1) 0%,
+    rgba(3, 65, 79, 1) 97%
+  );
 
-<style lang="scss" scoped>
-.logo {
-  width: 250px;
-  height: 250px;
+  animation: breathe 17s ease infinite;
+  background-size: 400% 400%;
 }
 </style>

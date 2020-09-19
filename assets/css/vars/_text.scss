@@ -1,0 +1,118 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li {
+  font-family: $futura-book;
+  color: $gray;
+}
+
+h1 {
+  font-size: 2.5rem;
+  @include md {
+    font-size: 3rem;
+  }
+
+  @include lg {
+    font-size: 5rem;
+  }
+
+  @include xl {
+    font-size: 6.25rem;
+  }
+  letter-spacing: 1px;
+
+  a {
+    text-transform: none;
+    font-size: inherit;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  color: $gray;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+
+p,
+a,
+li {
+  font-size: 1rem;
+
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  &.subtitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.15rem;
+    color: $gray;
+  }
+
+  a {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: none;
+    @include md {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.15rem;
+  transition: 0.5s;
+  animation: colouring 3s infinite;
+
+  &:hover {
+    svg path {
+      fill: $dark-electric;
+    }
+    animation-play-state: paused;
+  }
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $gray;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  &:active {
+    transform: scale(0.75);
+  }
+}
+
+li {
+  list-style-type: circle;
+}

@@ -1,3 +1,4 @@
+import shrinkRay from 'shrink-ray-current'
 export default {
   /*
    ** Nuxt rendering mode
@@ -34,7 +35,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    { src: '@/plugins/aos', ssr: false },
+    { src: '@/plugins/lazysizes.client.js', ssr: false },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -56,8 +60,19 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    },
+  },
   styleResources: {
-    scss: ['~/assets/css/*.scss'],
+    scss: ['~/assets/css/vars/*.scss'],
+  },
+  loading: { color: '#45A29E', height: '5px', throttle: 50 },
+  render: {
+    compressor: shrinkRay(),
   },
 }

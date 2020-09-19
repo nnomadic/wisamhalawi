@@ -28,7 +28,7 @@
       >
         <h1 class="mb-4">made by me</h1>
         <nuxt-link
-          to="/projects"
+          :to="{ path: 'projects' }"
           class="portfolio-hero__link"
           aria-label="Projects"
         >
@@ -81,11 +81,6 @@ export default {
         'Git',
       ],
     }
-  },
-  methods: {
-    next() {
-      this.$emit('next')
-    },
   },
 }
 </script>

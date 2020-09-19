@@ -9,9 +9,9 @@
         >
           <div class="project-directory__projects-item">
             <img
-              src="@/assets/images/expeditions.jpg"
+              :data-src="require('~/assets/images/expeditions.jpg')"
               alt="Expeditions Hike Image"
-              class="project-directory__image"
+              class="project-directory__image lazyload"
             />
             <h2 class="project-directory__image-text">Expeditions</h2>
           </div>
@@ -22,9 +22,9 @@
         >
           <div class="project-directory__projects-item">
             <img
-              src="@/assets/images/ffe.jpg"
+              :data-src="require('~/assets/images/ffe.jpg')"
               alt="Fulfilment Film Camera"
-              class="project-directory__image"
+              class="project-directory__image lazyload"
             />
             <h2 class="project-directory__image-text">FulFilmEnt Media</h2>
           </div>
@@ -35,9 +35,9 @@
         >
           <div class="project-directory__projects-item">
             <img
-              src="@/assets/images/saru.jpg"
+              :data-src="require('~/assets/images/saru.jpg')"
               alt="Saru Ju-Jitsu MMA"
-              class="project-directory__image"
+              class="project-directory__image lazyload"
             />
             <h2 class="project-directory__image-text">Saru Ju-Jitsu</h2>
           </div>
@@ -48,9 +48,9 @@
         >
           <div class="project-directory__projects-item">
             <img
-              src="@/assets/images/whsite.jpg"
+              :data-src="require('~/assets/images/whsite.jpg')"
               alt="WisamHalawi Keyboard"
-              class="project-directory__image"
+              class="project-directory__image lazyload"
             />
             <h2 class="project-directory__image-text">wisamhalawi</h2>
           </div>
@@ -61,9 +61,9 @@
         >
           <div class="project-directory__projects-item">
             <img
-              src="@/assets/images/books.jpg"
+              :data-src="require('~/assets/images/books.jpg')"
               alt="Degree and achievements books"
-              class="project-directory__image"
+              class="project-directory__image lazyload"
             />
             <h2 class="project-directory__image-text">Degree & Achievements</h2>
           </div>
@@ -131,6 +131,7 @@
       border: 1.5px solid $gray;
       overflow: hidden;
       border-radius: 5px;
+      animation: borderBreathe 2s ease infinite;
     }
   }
   &__image {
@@ -141,6 +142,7 @@
     object-position: top;
     filter: brightness(0.7);
     transition: 1s;
+    user-select: none;
 
     @include md {
       width: 350px;
@@ -164,6 +166,15 @@
         height: 500px;
       }
     }
+  }
+
+  .lazyload,
+  .lazyloading {
+    opacity: 0;
+  }
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity 1000ms;
   }
 }
 </style>

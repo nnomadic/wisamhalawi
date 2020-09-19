@@ -4,3 +4,11 @@
     <ProjectDirectory></ProjectDirectory>
   </div>
 </template>
+
+<script>
+export default {
+  beforeRouteEnter(to, from, next) {
+    next()
+  },
+}
+</script>

@@ -8,6 +8,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  // asyncData() {
+  //   return new Promise((resolve) => {})
+  // },
+}
+</script>
+
 <style lang="scss">
 .index {
   background: rgb(4, 31, 47);

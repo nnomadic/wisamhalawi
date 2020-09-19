@@ -67,3 +67,17 @@
     color: #c5c6c7;
   }
 }
+
+@keyframes borderBreathe {
+  0% {
+    border-color: #c5c6c7;
+  }
+
+  50% {
+    border-color: #45a29e;
+  }
+
+  100% {
+    border-color: #c5c6c7;
+  }
+}

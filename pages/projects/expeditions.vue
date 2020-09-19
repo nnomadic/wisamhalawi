@@ -79,7 +79,9 @@ export default {
 <style lang="scss">
 .expeditions {
   .projects-hero .hero-body {
-    background-position: bottom center !important;
+    @include lg {
+      background-position: bottom center !important;
+    }
   }
 
   &__subtitles {

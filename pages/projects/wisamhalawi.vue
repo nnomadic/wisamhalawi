@@ -5,7 +5,7 @@
       :hero-title="'this site'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">
-      <div class="pl-6">
+      <div>
         <div class="whsite__subtitles">
           <a href="https://wisamhalawi.com/">wisamhalawi.com</a>
           <p class="subtitle">|</p>

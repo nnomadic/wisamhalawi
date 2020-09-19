@@ -76,7 +76,9 @@ export default {
 <style lang="scss">
 .degree {
   .projects-hero .hero-body {
-    background-position: bottom center !important;
+    @include lg {
+      background-position: bottom center !important;
+    }
 
     h1 {
       text-shadow: 2px 2px 4px $black;

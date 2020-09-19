@@ -1,54 +1,67 @@
 <template>
-  <section class="project-directory">
+  <section class="section project-directory">
     <div class="">
       <div class="project-directory__projects">
         <nuxt-link to="/projects/expeditions" class="feature">
-          <img
-            src="@/assets/images/expeditions.jpg"
-            alt=""
-            class="project-directory__image"
-          />
-          <h2 class="project-directory__image-text">Expeditions</h2>
+          <div class="project-directory__projects-item">
+            <img
+              src="@/assets/images/expeditions.jpg"
+              alt=""
+              class="project-directory__image"
+            />
+            <h2 class="project-directory__image-text">Expeditions</h2>
+          </div>
         </nuxt-link>
         <nuxt-link to="/projects/fulfilment">
-          <img
-            src="@/assets/images/ffe.jpg"
-            alt=""
-            class="project-directory__image"
-          />
-          <h2 class="project-directory__image-text">FulFilmEnt Media</h2>
+          <div class="project-directory__projects-item">
+            <img
+              src="@/assets/images/ffe.jpg"
+              alt=""
+              class="project-directory__image"
+            />
+            <h2 class="project-directory__image-text">FulFilmEnt Media</h2>
+          </div>
         </nuxt-link>
         <nuxt-link to="/projects/sarujujitsu">
-          <img
-            src="@/assets/images/saru.jpg"
-            alt=""
-            class="project-directory__image"
-          />
-          <h2 class="project-directory__image-text">Saru Ju-Jitsu</h2>
+          <div class="project-directory__projects-item">
+            <img
+              src="@/assets/images/saru.jpg"
+              alt=""
+              class="project-directory__image"
+            />
+            <h2 class="project-directory__image-text">Saru Ju-Jitsu</h2>
+          </div>
         </nuxt-link>
         <nuxt-link to="/projects/wisamhalawi">
-          <img
-            src="@/assets/images/whsite.jpg"
-            alt=""
-            class="project-directory__image"
-          />
-          <h2 class="project-directory__image-text">wisamhalawi</h2>
+          <div class="project-directory__projects-item">
+            <img
+              src="@/assets/images/whsite.jpg"
+              alt=""
+              class="project-directory__image"
+            />
+            <h2 class="project-directory__image-text">wisamhalawi</h2>
+          </div>
         </nuxt-link>
         <nuxt-link to="/projects/degreeachievements">
-          <img
-            src="@/assets/images/books.jpg"
-            alt=""
-            class="project-directory__image"
-          />
-          <h2 class="project-directory__image-text">Degree and Achievements</h2>
+          <div class="project-directory__projects-item">
+            <img
+              src="@/assets/images/books.jpg"
+              alt=""
+              class="project-directory__image"
+            />
+            <h2 class="project-directory__image-text">Degree & Achievements</h2>
+          </div>
         </nuxt-link>
       </div>
     </div>
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .project-directory {
+  &.section {
+    padding-bottom: 6rem;
+  }
   // min-height: 100vh;
   display: flex;
   align-items: center;
@@ -62,28 +75,33 @@
   &__projects {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(1, 200px);
+    grid-template-rows: repeat(1, 270px);
     grid-gap: 15px;
     grid-auto-flow: row;
     // justify-items: center;
     // align-items: center;
 
-    margin: 3rem 0 8rem;
+    // margin: 3rem 0 8rem;
 
     @include md {
       grid-template-columns: repeat(2, 350px);
-      grid-template-rows: repeat(3, 200px);
+      grid-template-rows: repeat(3, 270px);
     }
     @include lg {
-      // grid-template-columns: repeat(3, 450px);
-      // grid-template-rows: repeat(2, 250px);
-      grid-gap: 5rem;
-      margin: -2rem 0 8rem;
+      grid-template-columns: repeat(2, 450px);
+      grid-template-rows: repeat(3, 219px);
+      grid-gap: 6rem;
+      // margin: -2rem 0 8rem;
     }
 
     a {
       width: auto;
       max-height: auto;
+      animation: none;
+
+      &::after {
+        display: none;
+      }
 
       &:hover::after {
         display: none;
@@ -91,16 +109,40 @@
       transition: 1s ease;
 
       &:hover {
-        transform: scale(1.1);
-        z-index: 2;
-        img {
-          filter: none;
-        }
+        @include lg {
+          // transform: scale(1.1);
 
-        h2 {
-          text-shadow: 2px 2px 4px $black;
+          img {
+            // padding: -10px;
+            // transform: scale(1.1);
+          }
+
+          .project-directory__projects-item {
+            // transition: 0.5s;
+            border-color: $dark-electric;
+          }
+
+          h2 {
+            color: $dark-electric;
+          }
         }
+        // z-index: 2;
+        // img {
+        //   filter: none;
+        // }
+
+        // h2 {
+        //   text-shadow: 2px 2px 4px $black;
+        // }
       }
+    }
+
+    &-item {
+      transition: 0.5s;
+      padding: 10px;
+      border: 1.5px solid $gray;
+      overflow: hidden;
+      border-radius: 5px;
     }
   }
   &__image {
@@ -111,23 +153,25 @@
     object-fit: cover;
     position: relative;
     object-position: top;
-    filter: blur(2px) brightness(0.7);
-    opacity: 0.9;
+    filter: brightness(0.7);
+    // opacity: 0.9;
     transition: 1s;
 
     @include md {
-      border-radius: 25px;
+      // border-radius: 25px;
       width: 350px;
     }
 
     @include lg {
       width: 450px;
-      height: 250px;
+      height: 219px;
     }
     &-text {
-      position: absolute;
-      top: 50%;
-      left: 10%;
+      // position: absolute;
+      // top: 50%;
+      // left: 10%;
+      z-index: 2;
+      transition: 0.5s;
     }
   }
 
@@ -136,7 +180,7 @@
       grid-row-start: span 2;
 
       img {
-        height: 529px;
+        height: 500px;
       }
     }
   }

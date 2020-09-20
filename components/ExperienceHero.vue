@@ -2,7 +2,7 @@
   <section class="section hero experience-hero">
     <div class="container">
       <h1 data-aos="fade-up" data-aos-duration="2500" class="mb-6">
-        professional experience
+        Professional experience
       </h1>
       <div class="is-flex-desktop mb-5">
         <div
@@ -28,7 +28,7 @@
               deliver module based builds for luxury enterprise clients. I
               received designs in Sketch from the extremely talented art and UX
               team then worked to develop them using Vue, Vuex, Typescript. I
-              participated in and became aware of agile ceromonies and
+              participated in and became aware of agile ceremonies and
               development procedures whilst advancing through sprints
               effectively along with the team players and expert developers.
             </p>
@@ -49,16 +49,16 @@
           <div class="is-flex-desktop">
             <p class="experience-hero__description">
               A chance appeared for me to learn new skills and expand what I've
-              learnt from my internship in the form of a quarantine. Since then
-              I've taken on multiple freelance projects (which you can read
-              about
+              learnt from my internship in the form of a national lockdown.
+              Since then I've taken on multiple freelance projects (which you
+              can read about
               <nuxt-link
                 to="/projects"
                 aria-label="Link to all projects"
                 alt="Link to all projects"
                 >here to view all projects</nuxt-link
-              >). The back-end work on some of these projects were in Laravel,
-              and I've explored css frameworks such as Bulma, Tailwind and
+              >). The back-end work on some of these projects was in Laravel,
+              and I've explored CSS frameworks such as Bulma, Tailwind and
               Bootstrap. Every project has had ES6 Javascript involved,
               alongside a choice of Vue or Nuxt.
             </p>

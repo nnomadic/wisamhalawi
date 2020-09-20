@@ -2,7 +2,7 @@
   <div class="ffe">
     <ProjectsHero
       :image-name="'ffe'"
-      :hero-title="'fulfilment media'"
+      :hero-title="'Fulfilment media'"
       :image-alt="'Fulfilment Media Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">

@@ -15,6 +15,14 @@
         </nuxt-link>
       </div>
       <div class="navbar-end is-flex-touch">
+        <nuxt-link
+          class="navbar-item"
+          to="/projects"
+          name="Projects"
+          aria-label="Projects"
+        >
+          <Tiles class="navbar__social" alt="Projects Link"
+        /></nuxt-link>
         <a
           class="navbar-item"
           href="https://github.com/nnomadic"
@@ -39,12 +47,14 @@
 import WHLogo from '@/assets/svg/logo.svg?inline'
 import Github from '@/assets/svg/github.svg?inline'
 import Linkedin from '@/assets/svg/linkedin.svg?inline'
+import Tiles from '@/assets/svg/tiles.svg?inline'
 
 export default {
   components: {
     WHLogo,
     Github,
     Linkedin,
+    Tiles,
   },
 }
 </script>

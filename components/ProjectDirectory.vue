@@ -74,7 +74,7 @@
               alt="WisamHalawi Keyboard"
               class="project-directory__image lazyload"
             />
-            <h2 class="project-directory__image-text">wisamhalawi</h2>
+            <h2 class="project-directory__image-text">Wisam|Halawi</h2>
           </div>
         </nuxt-link>
         <nuxt-link

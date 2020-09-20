@@ -2,7 +2,7 @@
   <div class="whsite">
     <ProjectsHero
       :image-name="'whsite'"
-      :hero-title="'this site'"
+      :hero-title="'This site'"
       :image-alt="'Portfolio Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">

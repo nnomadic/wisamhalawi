@@ -2,7 +2,7 @@
   <div class="degree">
     <ProjectsHero
       :image-name="'books'"
-      :hero-title="'degree and achievements'"
+      :hero-title="'Degree and achievements'"
       :image-alt="'Books Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">

@@ -6,7 +6,7 @@
         data-aos-duration="2500"
         class="portfolio-hero__work"
       >
-        <h1 class="mb-4 has-text-centered">what i work with</h1>
+        <h1 class="mb-4 has-text-centered">What I work with</h1>
         <div class="columns is-multiline is-mobile is-3">
           <div
             v-for="svg in SkillsSvgs"
@@ -17,7 +17,7 @@
           </div>
         </div>
         <p class="has-text-justified">
-          i'm an avid learner and always looking for a challenge, these are just
+          I'm an avid learner and always looking for a challenge, these are just
           some of my professional comforts
         </p>
       </div>
@@ -26,7 +26,7 @@
         data-aos-duration="2500"
         class="portfolio-hero__made"
       >
-        <h1 class="mb-4">made by me</h1>
+        <h1 class="mb-4">Made by me</h1>
         <div>
           <nuxt-link
             :to="{ path: 'projects' }"
@@ -142,6 +142,7 @@ export default {
 
   &__link {
     margin: 0 auto;
+    transform: scale(1.3);
     &:hover {
       svg path {
         fill: $dark-electric;

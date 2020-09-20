@@ -2,9 +2,9 @@
   <section class="section home hero is-fullheight has-bg-img">
     <div class="hero-body">
       <div class="container">
-        <h1 class="pl-6 text-1">hey</h1>
-        <h1 class="has-text-centered text-2">i'm Wis</h1>
-        <h1 class="has-text-right text-3">a creative web dev</h1>
+        <h1 class="pl-6 text-1">Hey</h1>
+        <h1 class="has-text-centered text-2">I'm Wis</h1>
+        <h1 class="has-text-right text-3">A creative web dev</h1>
         <h1 class="has-text-right text-4">and front-end specialist</h1>
       </div>
     </div>

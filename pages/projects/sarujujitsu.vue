@@ -2,7 +2,7 @@
   <div class="saru">
     <ProjectsHero
       :image-name="'saru'"
-      :hero-title="'saru ju-jitsu'"
+      :hero-title="'Saru ju-jitsu'"
       :image-alt="'Saru Ju Jitsu Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">

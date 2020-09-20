@@ -2,7 +2,7 @@
   <div class="expeditions">
     <ProjectsHero
       :image-name="'expeditions'"
-      :hero-title="'expeditions'"
+      :hero-title="'Expeditions'"
       :image-alt="'Expeditions Hero Image'"
     ></ProjectsHero>
     <div class="section container is-flex-desktop">

@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <h1>i'd love to hear from you</h1>
+      <h1>I'd love to hear from you</h1>
       <h1 class="mb-3">
-        let's
+        Let's
         <a
           href="mailto:info@wisamhalawi.com"
           aria-label="Email info@wisamhalawi.com"

@@ -24,13 +24,13 @@
           </div>
           <div class="is-flex-desktop">
             <p class="experience-hero__description">
-              I worked to tight deadlines with an intimate development team to
+              I worked to tight deadlines with a small development team to
               deliver module based builds for luxury enterprise clients. I
-              received designs in Sketch from the extremely talented art and UX
-              team then worked to develop them using Vue, Vuex, Typescript. I
-              participated in and became aware of agile ceremonies and
-              development procedures whilst advancing through sprints
-              effectively along with the team players and expert developers.
+              received designs in Sketch from the exceedingly talented art and
+              UX team, then worked to develop them using Vue, Vuex, and
+              Typescript. I participated in and became aware of agile ceremonies
+              and development procedures. Whilst advancing through sprints, I
+              was mentored closely by the team players and expert developers.
             </p>
           </div>
         </div>
@@ -48,19 +48,19 @@
           </div>
           <div class="is-flex-desktop">
             <p class="experience-hero__description">
-              A chance appeared for me to learn new skills and expand what I've
-              learnt from my internship in the form of a national lockdown.
-              Since then I've taken on multiple freelance projects (which you
-              can read about
+              After a successful internship, I decided to expand on my
+              development skills and undertake additional freelance projects. So
+              far, I have worked for clients with progressive businesses
+              (details of my
               <nuxt-link
                 to="/projects"
                 aria-label="Link to all projects"
                 alt="Link to all projects"
-                >here to view all projects</nuxt-link
+                >experience can be viewed here</nuxt-link
               >). The back-end work on some of these projects was in Laravel,
               and I've explored CSS frameworks such as Bulma, Tailwind and
-              Bootstrap. Every project has had ES6 Javascript involved,
-              alongside a choice of Vue or Nuxt.
+              Bootstrap. Every project has included ES6 Javascript, alongside a
+              choice of Vue or Nuxt.
             </p>
           </div>
         </div>

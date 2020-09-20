@@ -6,7 +6,7 @@
         data-aos-duration="2500"
         class="portfolio-hero__work"
       >
-        <h1 class="mb-4 has-text-centered">What I work with</h1>
+        <h1 class="mb-4 has-text-centered">What I Work With</h1>
         <div class="columns is-multiline is-mobile is-3">
           <div
             v-for="svg in SkillsSvgs"
@@ -26,7 +26,7 @@
         data-aos-duration="2500"
         class="portfolio-hero__made"
       >
-        <h1 class="mb-4">Made by me</h1>
+        <h1 class="mb-4">Made By Me</h1>
         <div>
           <nuxt-link
             :to="{ path: 'projects' }"
@@ -39,7 +39,7 @@
                 alt="Projects Link"
               ></Tiles>
             </span>
-            <span alt="Link to All projects"> All projects </span>
+            <span alt="Link to All projects"> All Projects </span>
           </nuxt-link>
         </div>
       </div>

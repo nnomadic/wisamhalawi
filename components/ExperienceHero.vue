@@ -2,7 +2,7 @@
   <section class="section hero experience-hero">
     <div class="container">
       <h1 data-aos="fade-up" data-aos-duration="2500" class="mb-6">
-        Professional experience
+        Professional Experience
       </h1>
       <div class="is-flex-desktop mb-5">
         <div

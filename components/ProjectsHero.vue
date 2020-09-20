@@ -27,7 +27,7 @@ export default {
     },
     heroTitle: {
       type: String,
-      default: 'My work',
+      default: 'My Work',
     },
   },
 }

@@ -75,4 +75,19 @@ export default {
   render: {
     compressor: shrinkRay(),
   },
+  pwa: {
+    meta: {
+      title: 'Wisam Halawi Portfolio',
+      author: 'Wisam Halawi',
+    },
+    manifest: {
+      name: 'Wisam Halawi Portfolio and Projects',
+      short_name: 'Wisam Halawi Portfolio',
+      lang: 'en',
+    },
+    icon: {
+      iconFileName: 'icon.png',
+      sizes: [36, 48, 72, 96, 144, 192, 256, 384, 512],
+    },
+  },
 }

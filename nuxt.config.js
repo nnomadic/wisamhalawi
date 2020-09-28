@@ -55,7 +55,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/sitemap'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -89,5 +89,9 @@ export default {
       iconFileName: 'icon.png',
       sizes: [36, 48, 72, 96, 144, 192, 256, 384, 512],
     },
+  },
+  sitemap: {
+    hostname: 'https://www.wisamhalawi.com',
+    gzip: true,
   },
 }

@@ -18,10 +18,10 @@
 
   .text {
     &-1 {
-      @include fadein('2000ms');
+      @include fadein('1500ms');
     }
     &-2 {
-      @include fadein('4000ms');
+      @include fadein('3500ms');
       margin: 2rem 0;
       @include md {
         margin: 4rem 0;
@@ -29,11 +29,11 @@
     }
 
     &-3 {
-      @include fadein('6000ms');
+      @include fadein('5000ms');
     }
 
     &-4 {
-      @include fadein('8000ms');
+      @include fadein('7000ms');
     }
   }
 

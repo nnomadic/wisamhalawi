@@ -71,6 +71,18 @@ export default {
   components: {
     Tiles,
   },
+  head() {
+    return {
+      title: 'Saru Ju-Jitsu - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis work on sarujujitsuacademy.co.uk',
+        },
+      ],
+    }
+  },
 }
 </script>
 

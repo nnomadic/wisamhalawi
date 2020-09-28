@@ -70,6 +70,18 @@ export default {
   components: {
     Tiles,
   },
+  head() {
+    return {
+      title: 'Fulfilment Media - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis work on fulfilmentmedia.com',
+        },
+      ],
+    }
+  },
 }
 </script>
 

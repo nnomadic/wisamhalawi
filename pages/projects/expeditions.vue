@@ -80,6 +80,18 @@ export default {
   components: {
     Tiles,
   },
+  head() {
+    return {
+      title: 'Expeditions - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis work on expeditions.com',
+        },
+      ],
+    }
+  },
 }
 </script>
 

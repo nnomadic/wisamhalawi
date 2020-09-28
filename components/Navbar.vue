@@ -3,6 +3,7 @@
     class="navbar is-fixed-top"
     role="navigation"
     aria-label="main-navigation"
+    :class="{ scrolled: !view.atTopOfPage }"
   >
     <div class="container is-flex-touch">
       <div class="navbar-item navbar-start">
@@ -56,12 +57,45 @@ export default {
     Linkedin,
     Tiles,
   },
+  data() {
+    return {
+      view: {
+        atTopOfPage: true,
+      },
+    }
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    // throttle(fn, wait) {
+    //   let time = Date.now()
+    //   return function () {
+    //     if (time + wait - Date.now() < 0) {
+    //       fn()
+    //       time = Date.now()
+    //     }
+    //   }
+    // },
+    handleScroll() {
+      if (window.pageYOffset > 0) {
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false
+      } else if (!this.view.atTopOfPage) {
+        this.view.atTopOfPage = true
+      }
+    },
+  },
 }
 </script>
 
 <style lang="scss">
 .navbar {
   background-color: transparent !important;
+  transition: 0.7s ease;
+
+  &.scrolled {
+    background-color: rgba(2, 11, 16, 0.5) !important;
+  }
 
   .container {
     justify-content: space-around;

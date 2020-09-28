@@ -77,6 +77,18 @@ export default {
   components: {
     Tiles,
   },
+  head() {
+    return {
+      title: 'Degree & Achievements - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis degree and achievments',
+        },
+      ],
+    }
+  },
 }
 </script>
 

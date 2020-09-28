@@ -24,3 +24,20 @@
   }
 }
 </style>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Home - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis portfolio and general experience',
+        },
+      ],
+    }
+  },
+}
+</script>

@@ -70,6 +70,18 @@ export default {
   components: {
     Tiles,
   },
+  head() {
+    return {
+      title: 'This Site - Wisam Halawi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Wisam Halawis work on this portfolio site',
+        },
+      ],
+    }
+  },
 }
 </script>
 

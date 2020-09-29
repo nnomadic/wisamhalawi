@@ -94,4 +94,8 @@ export default {
     hostname: 'https://www.wisamhalawi.com',
     gzip: true,
   },
+  server: {
+    host: '192.168.0.173',
+    port: '60756', // default: 3000
+  }, // other configs
 }
